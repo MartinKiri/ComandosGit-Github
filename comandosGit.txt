@@ -1,0 +1,43 @@
+https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf
+
+Comandos generales para todas las terminales.
+
+ls: Listado de directorios 
+cd: Entrar en el directorio
+.. : Salgo del directorio que me encuentro 
+pwd: Muestra la ruta en la que me encuentro
+mkdir "nombre de la carpeta" : Crear carpeta 
+touch "nombre del archivo" : Crea el archivo
+touch .gitignore: Crea el fichero para que los ficheros que esten dentro no tengan "repercusion"
+clear  Limpiar la consola
+
+
+COMANDOS GIT
+
+git -v: Para saber que versión tienes instalada
+git -h :  help 
+git init: Crea una carpeta que se llama .git que se encuentra oculta
+git status: Muestra los cambios que se han realizado cambios sin guardarse
+git add "nombre del archivo que quieres que se suba" / .  : Sirve para que guarde el contenido del archivo especifico / para guardar todos los archios hechos.
+git commit -m "####" :  Mensaje que define los cambios,el contenido cambiado
+git checkout "El archivo en concreto " : Cuando realizas cambios en ela rchivo y no son guardados pero no son los deados... volver al ultimo guardado.
+git reset: Muestra los archivos que han sido modificados.
+git log --graph : Muestra el historial de los cambios realizados.
+git config --global alias."nombre del comando que quieras crear" "El comando que quieres lanzar" : Creación de comandos personales
+git diff : muestra los cambios que se han realizado sin que se hayan guardado los cambios 
+git reset --hard "ruta": Volver a los cambios seleccionados y "borrando los cambios realizados a posterior"
+git reflog : Historial completo de todos los commits que se han realizado.
+git tag "version_1" :  Estableciendo diferentes flujos de navegación   
+
+Ramas
+git branch "###" : Crea una rama con el nombre que tu quieras.
+git switch : cambiar de rama 
+git merge "main" : Fusionar las ramas.
+git stash  : Crea contenido almacenado para poder ir trabajandolo en un futuro
+git stash list    .-.   Para recuperar el archivo termporal -> git stash pop               para eliminar el stash   -> git stash drop
+git branch -d "nombre de la rama": Para eliminar rama.  
+
+git push: para subir los cambios.
+git push -u origin "a que rama quieres subirlo"
+git fetch  Descarga el historial de cambios
+git pull Descarga los cambios
